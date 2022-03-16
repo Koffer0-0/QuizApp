@@ -10,8 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp">
         <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/NoActionBarTheme" /> <!-- added portrait, theme and adjustResize -->
+
+        <!-- we created there new activity and copied tags -->
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme" /> <!-- added portrait, theme and adjustResize -->
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
